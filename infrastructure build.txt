@@ -56,6 +56,10 @@ sudo ufw allow 80
 sudo ufw allow 443
 
 ###################sonarqube############################
+
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+
+
 sudo apt install default-jdk
 java -version
 wget -q https://www.postgresql.org/media/keys... -O - | sudo apt-key add -
